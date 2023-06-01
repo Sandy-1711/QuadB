@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/QuadB/static/css/main.9b509361.css",
+    "main.js": "/QuadB/static/js/main.641a4ab6.js",
+    "index.html": "/QuadB/index.html",
+    "main.9b509361.css.map": "/QuadB/static/css/main.9b509361.css.map",
+    "main.641a4ab6.js.map": "/QuadB/static/js/main.641a4ab6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b509361.css",
+    "static/js/main.641a4ab6.js"
+  ]
+}
