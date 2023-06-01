@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.container{
+    background-color: rgb(44, 41, 41);
+    color: white;
+    min-height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem 0;
+}
+.resultsArea{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    gap: 2rem;
+}
+.showCard{
+    background: rgba(24, 23, 23, 0.567);
+    padding: 2rem;
+}
+ button{
+    padding: 0.5rem 1.2rem;
+    width: 100%;
+    margin: 1rem auto;    
+    border: none;
+    outline: none;
+    background-color:coral;
+    color: white;
+}
+.showCard button:hover{
+    background-color: crimson;
+}
+ button:hover{
+    background-color:crimson;
+
+}
+.showContainer{
+    background-color: rgb(44, 41, 41);
+    color: white;
+    min-height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem ;
+    gap: 5rem;
+}
+
+.showImage{
+    width: 40rem;
+}
+.showImage img{
+    width: 40rem;
+}
+.showInfo{
+    width: 20%;   
+}
+.showInfo h1{
+    font-size: 3rem;
+}
+.showInfo p{
+    font-size: large;
+}
+.showInfo span{
+    color: chocolate;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 3rem;
+    background-color:rgba(24, 23, 23, 0.567);
+    border-radius: 2rem;
+}
+input{
+    width: 100%;
+    border-radius: 2rem;
+    padding: 0.8rem 1.75rem;
+    outline: none;
+    border: none;
+}
+form button{
+    margin: 0;
+    border-radius: 2rem;
+    padding: 0.8rem 1.75rem;
+}
+@media screen and (width<640px) {
+    .resultsArea{
+        grid-template-columns: 1fr;
+    }
+    .showContainer{
+        flex-direction: column;
+    }
+    .showInfo{
+        width: 50%;
+    }
+}
+@media screen and (640px<width<900px){
+    .resultsArea{
+        grid-template-columns: 1fr 1fr;
+    }
+    .showContainer{
+        flex-direction: column;
+    }
+    .showInfo{
+        width: 50%;
+    }
+}
+@media screen and (900px<width<1240px){
+    .resultsArea{
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .showContainer{
+        flex-direction: column;
+    }
+    .showInfo{
+        width: 50%;
+    }
+}
+@media screen and (1240px<width<1500px){
+    .resultsArea{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
